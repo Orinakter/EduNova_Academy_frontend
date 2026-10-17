@@ -1,0 +1,18 @@
+import Footer from "@/components/shared/Footer"
+import Navbar from "@/components/shared/Navbar"
+import React from "react"
+
+
+const AuthLayout = ({children}:{children:React.ReactNode}) => {
+  return (
+   <div className="max-w-363 mx-auto">
+    <Navbar/>
+    <div className="min-h-screen">
+        {children}
+    </div>
+    <Footer/>
+   </div>
+  )
+}
+
+export default AuthLayout
